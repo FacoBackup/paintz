@@ -1,0 +1,106 @@
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    background: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.left > ul {
+    font-size: .5rem;
+    height: 50px;
+}
+
+.left > footer {
+    font-size: .8rem;
+    width: 100%;
+
+    padding-left: 32px;
+    height: 50px;
+}
+
+.right {
+    background: #f5f4fa;
+    width: 100%;
+    position: relative;
+}
+
+.inputs {
+    height: 100%;
+    padding: 0 25%;
+
+    display: grid;
+    align-content: center;
+    gap: 16px;
+}
+
+.input {
+    width: 100%;
+    height: 35px;
+
+    border: #e0e0e0 1px solid;
+    border-radius: 8px;
+    background: transparent;
+
+    outline: none;
+    transition: 150ms ease-out;
+}
+
+.input:focus{
+    background: #f5f4fa;
+}
+.inputContainer > label{
+    font-weight: bolder;
+    font-size: .85rem;
+}
+.button {
+    border-radius: 8px;
+    height: 40px;
+    background: orangered;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.button:active{
+    background: #dd4500;
+}
+
+.sphere {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    background: orangered;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: minha-animacao 5s infinite linear;
+}
+
+@keyframes minha-animacao {
+    0%{
+        background: orange;
+    }
+    50%{
+        background: orangered;
+    }
+    100%{
+        background: orange;
+    }
+}
+.sphereBlur {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    backdrop-filter: blur(10px);
+
+}

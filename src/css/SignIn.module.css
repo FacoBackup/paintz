@@ -24,7 +24,7 @@
 
 
 .right {
-    background: #f5f4fa;
+    background: var(--background-1);
     width: 100%;
     position: relative;
 }
@@ -45,7 +45,7 @@
     width: 100%;
     height: 40px;
 
-    border: #e0e0e0 1px solid;
+    border: var(--border-0) 1px solid;
     border-radius: 8px;
     background: transparent;
 
@@ -56,7 +56,7 @@
 }
 
 .input:focus{
-    background: #f5f4fa;
+    background: var(--background-1);
 }
 
 .inputLabel{
@@ -118,9 +118,9 @@
 
 }
 .footer > a{
-    color: #333 !important;
+    color: var(--color-1) !important;
     text-decoration: none;
 }
 .footer > a:hover{
-    color: #0095ff !important;
+    color: var(--accent) !important;
 }

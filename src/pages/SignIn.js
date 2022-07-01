@@ -9,24 +9,20 @@ export default function SignIn() {
     return (
         <div className={styles.container}>
             <div className={styles.left}>
-                <ul>
-                    <li>
-                        <h1>
-                            Paintzee
-                        </h1>
-                    </li>
-                </ul>
+                <h1 className={styles.logo}>
+                    - Paintz
+                </h1>
                 <div className={styles.inputs}>
                     <div>
                         <h1 style={{marginBottom: "0"}}>
                             Bem vindo
                         </h1>
-                        <h5 style={{margin: "0"}}>
-                            Sei la
+                        <h5 style={{margin: "0", fontWeight: "normal"}}>
+                            Plataforma para desenhos online
                         </h5>
                     </div>
-                    <div className={styles.inputContainer}>
-                        <label>
+                    <div style={{display: "grid"}}>
+                        <label className={styles.inputLabel}>
                             E-mail
                         </label>
                         <input
@@ -35,9 +31,8 @@ export default function SignIn() {
                             value={email}
                             onChange={event => setEmail(event.target.value)}
                         />
-                    </div>
-                    <div className={styles.inputContainer}>
-                        <label>
+
+                        <label className={styles.inputLabel} style={{marginTop: '16px'}}>
                             Senha
                         </label>
                         <input className={styles.input} placeholder={"Senha"} type={"password"}
@@ -49,8 +44,16 @@ export default function SignIn() {
                         Entrar
                     </button>
                 </div>
-                <footer>
-                    @Sei la
+                <footer className={styles.footer}>
+                    <a href={"https://github.com/FacoBackup"} target={"_blank"} rel={"noreferrer"}>
+                        @facobackup
+                    </a>
+                    <a href={"https://github.com/luabrantess"} target={"_blank"} rel={"noreferrer"}>
+                        @luabrantess
+                    </a>
+                    <a href={"https://github.com/mathscarvalho"} target={"_blank"} rel={"noreferrer"}>
+                        @mathscarvalho
+                    </a>
                 </footer>
             </div>
             <div className={styles.right}>

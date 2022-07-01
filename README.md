@@ -6,7 +6,7 @@
 
 ### Overview
 
-Board para criação e armazenamento de desenhos.
+Canvas para criação e armazenamento de desenhos.
 
 #### Páginas
 
@@ -27,3 +27,5 @@ Board para criação e armazenamento de desenhos.
   - Event listeners
   - Canvas com contexto 2D
 - CSS
+
+

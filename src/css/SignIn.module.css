@@ -3,6 +3,12 @@
     height: 100vh;
 }
 
+.logo{
+    font-size: .8rem;
+    font-weight: bold;
+    padding-left: 8px;
+}
+
 .left {
     background: white;
     width: 100%;
@@ -16,13 +22,6 @@
     height: 50px;
 }
 
-.left > footer {
-    font-size: .8rem;
-    width: 100%;
-
-    padding-left: 32px;
-    height: 50px;
-}
 
 .right {
     background: #f5f4fa;
@@ -31,17 +30,20 @@
 }
 
 .inputs {
+    overflow: hidden;
     height: 100%;
     padding: 0 25%;
 
-    display: grid;
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     gap: 16px;
 }
 
 .input {
+
     width: 100%;
-    height: 35px;
+    height: 40px;
 
     border: #e0e0e0 1px solid;
     border-radius: 8px;
@@ -49,16 +51,19 @@
 
     outline: none;
     transition: 150ms ease-out;
+
+    box-sizing: border-box;
 }
 
 .input:focus{
     background: #f5f4fa;
 }
-.inputContainer > label{
-    font-weight: bolder;
-    font-size: .85rem;
+
+.inputLabel{
+    font-size: .75rem;
 }
 .button {
+
     border-radius: 8px;
     height: 40px;
     background: orangered;
@@ -82,10 +87,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: minha-animacao 5s infinite linear;
+    animation: blink 5s infinite ease-in-out;
 }
 
-@keyframes minha-animacao {
+@keyframes blink {
     0%{
         background: orange;
     }
@@ -102,5 +107,20 @@
     width: 100%;
     height: 50%;
     backdrop-filter: blur(10px);
+}
 
+.footer{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px;
+    font-size: .75rem;
+
+}
+.footer > a{
+    color: #333 !important;
+    text-decoration: none;
+}
+.footer > a:hover{
+    color: #0095ff !important;
 }
